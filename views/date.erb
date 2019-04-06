@@ -1,6 +1,7 @@
-<% @date = Date.new(2019,4,6) %>
+<% @date = Date.new('2019,4,6') %>
 <% d = DateTime.parse(@date) %>
-d.strftime('%a %d %b %Y')
+<% d.strftime('%a %d %b %Y') %>
+
 <h1>Today</h1>
 
 <p>The date is <%=@date.parse %></p>
